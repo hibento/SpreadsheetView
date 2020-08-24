@@ -217,30 +217,30 @@
 		149E6A6B1EADE047000D851D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				149E6A831EADE0EA000D851D /* SpreadsheetView.h */,
-				149E6A841EADE0EA000D851D /* SpreadsheetView.swift */,
-				143664CC1EB653A000321E5E /* SpreadsheetView+Layout.swift */,
-				149E24061EBF05A00049E172 /* LayoutEngine.swift */,
-				143664CA1EB652F100321E5E /* SpreadsheetView+CirclularScrolling.swift */,
-				143664C61EB6509800321E5E /* SpreadsheetView+Touches.swift */,
-				1451A0711ECEC2AF00C048DF /* SpreadsheetView+UIViewHierarchy.swift */,
-				14120FFF1EE1D7A7004E41A3 /* SpreadsheetView+UISnapshotting.swift */,
-				143664C81EB6518600321E5E /* SpreadsheetView+UIScrollView.swift */,
-				143664CE1EB655CA00321E5E /* SpreadsheetView+UIScrollViewDelegate.swift */,
-				149E6A851EADE0EA000D851D /* SpreadsheetViewDataSource.swift */,
-				149E6A861EADE0EA000D851D /* SpreadsheetViewDelegate.swift */,
-				149E6A871EADE0EA000D851D /* ScrollPosition.swift */,
-				149E23FF1EBD4D620049E172 /* CircularScrolling.swift */,
-				149E6A881EADE0EA000D851D /* ScrollView.swift */,
+				149E6A8D1EADE0EA000D851D /* Address.swift */,
+				149E6A901EADE0EA000D851D /* Array+BinarySearch.swift */,
+				14B2F24F1EC031950014C199 /* Borders.swift */,
 				149E6A891EADE0EA000D851D /* Cell.swift */,
 				149E6A8B1EADE0EA000D851D /* CellRange.swift */,
+				149E23FF1EBD4D620049E172 /* CircularScrolling.swift */,
 				14B36C4E1EBF664600730F29 /* Gridlines.swift */,
-				14B2F24F1EC031950014C199 /* Borders.swift */,
-				149E6A8C1EADE0EA000D851D /* Location.swift */,
-				149E6A8D1EADE0EA000D851D /* Address.swift */,
-				149E6A8E1EADE0EA000D851D /* ReuseQueue.swift */,
 				149E6A8F1EADE0EA000D851D /* IndexPath+Column.swift */,
-				149E6A901EADE0EA000D851D /* Array+BinarySearch.swift */,
+				149E24061EBF05A00049E172 /* LayoutEngine.swift */,
+				149E6A8C1EADE0EA000D851D /* Location.swift */,
+				149E6A8E1EADE0EA000D851D /* ReuseQueue.swift */,
+				149E6A871EADE0EA000D851D /* ScrollPosition.swift */,
+				149E6A881EADE0EA000D851D /* ScrollView.swift */,
+				149E6A831EADE0EA000D851D /* SpreadsheetView.h */,
+				149E6A841EADE0EA000D851D /* SpreadsheetView.swift */,
+				143664CA1EB652F100321E5E /* SpreadsheetView+CirclularScrolling.swift */,
+				143664CC1EB653A000321E5E /* SpreadsheetView+Layout.swift */,
+				143664C61EB6509800321E5E /* SpreadsheetView+Touches.swift */,
+				143664C81EB6518600321E5E /* SpreadsheetView+UIScrollView.swift */,
+				143664CE1EB655CA00321E5E /* SpreadsheetView+UIScrollViewDelegate.swift */,
+				14120FFF1EE1D7A7004E41A3 /* SpreadsheetView+UISnapshotting.swift */,
+				1451A0711ECEC2AF00C048DF /* SpreadsheetView+UIViewHierarchy.swift */,
+				149E6A851EADE0EA000D851D /* SpreadsheetViewDataSource.swift */,
+				149E6A861EADE0EA000D851D /* SpreadsheetViewDelegate.swift */,
 				149E23E61EBD15940049E172 /* Supporting Files */,
 			);
 			path = Sources;
@@ -249,19 +249,19 @@
 		149E6A761EADE047000D851D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				143664BC1EB59DCA00321E5E /* ViewTests.swift */,
+				14CBB7EF1EC8AF22005BEEB3 /* CellRangeTests.swift */,
+				147898E21ECB607E004BB0A1 /* CellTests.swift */,
+				1478491E1EC38F8B0020C938 /* ConfigurationTests.swift */,
+				149E24011EBECDFB0049E172 /* DataSourceTests.swift */,
+				143664BE1EB5A01500321E5E /* HelperFunctions.swift */,
+				143664C01EB5A07300321E5E /* HelperObjects.swift */,
+				149E6AA41EADE19F000D851D /* HostApp */,
+				14AE25751EBF1F8C0003D1F8 /* MergedCellTests.swift */,
+				143664C41EB6201800321E5E /* PerformanceTests.swift */,
 				149E6A771EADE048000D851D /* ScrollTests.swift */,
 				143664C21EB61FE900321E5E /* SelectionTests.swift */,
-				14AE25751EBF1F8C0003D1F8 /* MergedCellTests.swift */,
-				149E24011EBECDFB0049E172 /* DataSourceTests.swift */,
-				147898E21ECB607E004BB0A1 /* CellTests.swift */,
-				14CBB7EF1EC8AF22005BEEB3 /* CellRangeTests.swift */,
-				1478491E1EC38F8B0020C938 /* ConfigurationTests.swift */,
-				143664C41EB6201800321E5E /* PerformanceTests.swift */,
-				143664C01EB5A07300321E5E /* HelperObjects.swift */,
-				143664BE1EB5A01500321E5E /* HelperFunctions.swift */,
-				149E6AA41EADE19F000D851D /* HostApp */,
 				149E24031EBECE0B0049E172 /* Supporting Files */,
+				143664BC1EB59DCA00321E5E /* ViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -353,33 +353,33 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Kishikawa Katsumi";
 				TargetAttributes = {
 					149E6A681EADE047000D851D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 27AEDK3C9F;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 					};
 					149E6A711EADE047000D851D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 27AEDK3C9F;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 149E6AA21EADE19F000D851D;
 					};
 					149E6AA21EADE19F000D851D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 27AEDK3C9F;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 149E6A631EADE047000D851D /* Build configuration list for PBXProject "SpreadsheetView" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -517,6 +517,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BITCODE_GENERATION_MODE = marker;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -526,6 +527,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -533,6 +535,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -566,7 +569,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -578,6 +581,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -587,6 +591,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -594,6 +599,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -619,7 +625,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -643,8 +649,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.SpreadsheetView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -664,8 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.SpreadsheetView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -678,8 +682,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.SpreadsheetViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostApp.app/HostApp";
 			};
 			name = Debug;
@@ -693,8 +696,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.SpreadsheetViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostApp.app/HostApp";
 			};
 			name = Release;
@@ -709,8 +711,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.HostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -724,8 +725,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.HostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
